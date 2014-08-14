@@ -1,0 +1,6 @@
+FROM stackbrew/ubuntu:14.04
+MAINTAINER 98nmp5992z@snkmail.com
+
+RUN apt-get update && apt-get -y install python
+RUN echo "cmd" > index.html
+CMD ["python", "-m", "SimpleHTTPServer"]
